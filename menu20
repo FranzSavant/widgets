@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Planificador en una sola pantalla</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white p-4">
+  
+  <!-- SECCIÓN: Selección de Día -->
+  <div class="mb-4">
+    <label for="daySelect" class="block font-bold mb-1">Día de la Semana:</label>
+    <select id="daySelect" class="border p-2 w-full rounded bg-gray-800 text-white">
+      <option value="">Seleccione un día</option>
+      <option value="lunes">Lunes</option>
+      <option value="martes">Martes</option>
+      <option value="miercoles">Miércoles</option>
+      <option value="jueves">Jueves</option>
+      <option value="viernes">Viernes</option>
+      <option value="sabado">Sábado</option>
+      <option value="domingo">Domingo</option>
+    </select>
+  </div>
+
+  <!-- BLOQUES DE COMIDAS -->
+  <div class="space-y-6">
+
+    <!-- DESAYUNO -->
+    <div class="bg-gray-800 border rounded p-4 shadow">
+      <h2 class="text-xl font-bold mb-4 text-shadow">Desayuno</h2>
+      <div class="grid grid-cols-3 gap-4">
+        <!-- Proteínas -->
+        <select class="border p-2 w-full rounded bg-gray-700 text-white">
+          <option value="">Seleccione proteína</option>
+          <option>🐔 Alas de pollo (12 onzas / 0.75 lb)</option>
+          <option>🐟 Atún enlatado Calvo (en aceite) (1½ latas / 180 g)</option>
+          <option>🦐 Camarón (10 onzas / 0.60 lb)</option>
+          <option>🥩 Carne vacuna (10 onzas / 0.60 lb)</option>
+          <option>🐖 Cerdo (10 onzas / 0.60 lb)</option>
+          <option>🐖 Chicharrones (3 onzas)</option>
+          <option>🥚 Clara (12 unidades)</option>
+          <option>🐔 Gallina (10 onzas / 0.60 lb)</option>
+          <option>🥚 Huevo entero (6 unidades)</option>
+          <option>🍖 Jamón de pavo (24 lascas / 0.50 lb)</option>
+          <option>🌭 Salchicha de pavo FUD (6 unidades / 300 g)</option>
+          <option>🥛 Leche de vaca (6 tazas / 48 onzas)</option>
+          <option>🐟 Lonja de pescado (10 onzas / 0.60 lb)</option>
+          <option>🧀 Mozzarella (12 rebanadas / 210 g)</option>
+          <option>🧀 Parmesano rallado (12 cucharadas / 120 g)</option>
+          <option>🦃 Pavo pechuga (10 onzas / 0.60 lb)</option>
+          <option>🐔 Pollo pechuga (10 onzas / 0.60 lb)</option>
+          <option>💪 Proteína en polvo (2 scoops / 48-60 g)</option>
+          <option>🧀 Quesillo (6 onzas)</option>
+          <option>🧀 Queso duro (10 onzas / 0.60 lb)</option>
+          <option>🧀 Queso fresco (10 onzas / 0.60 lb)</option>
+          <option>🥛 Requesón de vaca (18 onzas / 1.13 lb)</option>
+          <option>🧀 Ricota (12 onzas / 0.75 lb)</option>
+          <option>🐟 Sardina Pacífico Azul (3 latas / 210 g)</option>
+          <option>🥓 Tocino (6 onzas)</option>
+          <option>🥚 Yema (12 unidades)</option>
+        </select>
+
+        <!-- Carbohidratos -->
+        <select class="border p-2 w-full rounded bg-gray-700 text-white">
+          <option value="">Seleccione carbohidrato</option>
+          <option>🍚 Arroz blanco cocido (1 taza)</option>
+          <option>🥣 Avena (12 cucharadas grandes / 120 g)</option>
+          <option>🍬 Azúcar (48 g)</option>
+          <option>🥦 Brócoli (6 unidades pequeñas o 3 grandes / 780 g)</option>
+          <option>🍫 Chocolate (120 g)</option>
+          <option>🥦 Coliflor rallada (18 tazas / 1980 g)</option>
+          <option>🌱 Ejotes picados (6 tazas / 780 g)</option>
+          <option>🥬 Espinacas cocidas (9 tazas / 1800 g)</option>
+          <option>🍓 Fresas (6 tazas / 1020 g)</option>
+          <option>🥣 Frijoles sancochados (12 cucharadas)</option>
+          <option>🥒 Guisquil rallado (6 tazas / 1200 g)</option>
+          <option>🍦 Helado de chocolate (24 cucharadas / 210 g)</option>
+          <option>🥔 Jícama (3 tazas picadas / 600 g)</option>
+          <option>🍊 Mandarinas (6 unidades / 300 g)</option>
+          <option>🥭 Mango picado (3 tazas / 420 g)</option>
+          <option>🍎 Manzanas (3 unidades / 540 g)</option>
+          <option>🍑 Melocotón (6 unidades / 540 g)</option>
+          <option>🍈 Melón en cubos (6 tazas / 720 g)</option>
+          <option>🍯 Mermelada (12 cucharaditas / 90 g)</option>
+          <option>🍯 Miel (3 cucharadas / 90 g)</option>
+          <option>🍊 Naranjas (3 unidades / 690 g)</option>
+          <option>🍞 Pan de caja integral (6 rebanadas / 90 g)</option>
+          <option>🍈 Papaya en cubos (6 tazas / 780 g)</option>
+          <option>🍇 Pasas (24 pasas / 60 g)</option>
+          <option>🥔 Papas en cubos (1½ taza / 300 g)</option>
+          <option>🥒 Pepino (6 medianos / 1500 g)</option>
+          <option>🍐 Peras (3 unidades / 600 g)</option>
+          <option>🌶️ Chile verde picado (6 tazas / 900 g)</option>
+          <option>🍍 Piña en cubos (3 tazas / 540 g)</option>
+          <option>🍌 Guineo (3 unidades medianas / 360 g)</option>
+          <option>🌯 Tortilla trigo Bimbo (Rapidita) (6 unidades)</option>
+          <option>🌽 Tortilla maíz (6 unidades pequeñas / 90 g)</option>
+          <option>🍠 Remolacha rallada (12 unidades pequeñas o 6 medianas / 570 g)</option>
+          <option>🍉 Sandía (4½ taza / 1500 g)</option>
+          <option>🍅 Tomates de ensalada (12 unidades / 1800 g)</option>
+          <option>🍇 Uvas (3 tazas / 360 g)</option>
+          <option>🥔 Yuca Sancochada (150 g)</option>
+          <option>🥕 Zanahorias ralladas (6 tazas / 720 g)</option>
+          <option>🥤 Berenjena picada (6 tazas / 600 g)</option>
+        </select>
+
+        <!-- Grasas -->
+        <select class="border p-2 w-full rounded bg-gray-700 text-white">
+          <option value="">Seleccione grasa</option>
+          <option>🫒 Aceite vegetal (~2 cucharaditas)</option>
+          <option>🫒 Aceitunas negras (~18 unidades)</option>
+          <option>🫒 Aceitunas verdes (~18 unidades)</option>
+          <option>🥑 Aguacate (~6 cucharaditas)</option>
+          <option>🌰 Almendras (~18 unidades)</option>
+          <option>🌰 Nueces frescas (~6 unidades)</option>
+          <option>🌰 Nueces de macadamia (~6 unidades)</option>
+          <option>🌰 Nueces secas (~6 unidades)</option>
+          <option>🥗 Mayonesa light (~3 cucharaditas)</option>
+          <option>🧈 Aceite de otros tipos (~2 cucharaditas)</option>
+          <option>🧈 Manteca (~3 cucharaditas aprox.)</option>
+          <option>🧈 Margarina (~3 cucharaditas aprox.)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- MERIENDA 1 -->
+    <div class="bg-gray-800 border rounded p-4 shadow">
+      <h2 class="text-xl font-bold mb-4 text-shadow">Merienda 1</h2>
+      <div class="grid grid-cols-3 gap-4">
+        <!-- Proteínas -->
+        <select class="border p-2 w-full rounded bg-gray-700 text-white">
+          <option value="">Seleccione proteína</option>
+          <!-- Repetir todas las opciones de proteína -->
+        </select>
+        <!-- Carbohidratos -->
+        <select class="border p-2 w-full rounded bg-gray-700 text-white">
+          <option value="">Seleccione carbohidrato</option>
+          <!-- Repetir todas las opciones de carbohidrato -->
+        </select>
+        <!-- Grasas -->
+        <select class="border p-2 w-full rounded bg-gray-700 text-white">
+          <option value="">Seleccione grasa</option>
+          <!-- Repetir todas las opciones de grasa -->
+        </select>
+      </div>
+    </div>
+
+    <!-- ALMUERZO -->
+    <div class="bg-gray-800 border rounded p-4 shadow">
+      <h2 class="text-xl font-bold mb-4 text-shadow">Almuerzo</h2>
+      <div class="grid grid-cols-3 gap-4">
+        <!-- Proteínas -->
+        <select class="border p-2 w-full rounded bg-gray-700 text-white">
+          <option value="">Seleccione proteína</option>
+          <!-- Repetir todas las opciones de proteína -->
+        </select>
+        <!-- Carbohidratos -->
+        <select class="border p-2 w-full rounded bg-gray-700 text-white">
+          <option value="">Seleccione carbohidrato</option>
+          <!-- Repetir todas las opciones de carbohidrato -->
+        </select>
+        <!-- Grasas -->
+        <select class="border p-2 w-full rounded bg-gray-700 text-white">
+          <option value="">Seleccione grasa</option>
+          <!-- Repetir todas las opciones de grasa -->
+        </select>
+      </div>
+    </div>
+
+    <!-- MERIENDA 2 -->
+    <div class="bg-gray-800 border rounded p-4 shadow">
+      <h2 class="text-xl font-bold mb-4 text-shadow">Merienda 2</h2>
+      <div class="grid grid-cols-3 gap-4">
+        <!-- Proteínas -->
+        <select class="border p-2 w-full rounded bg-gray-700 text-white">
+          <option value="">Seleccione proteína</option>
+          <!-- Repetir todas las opciones de proteína -->
+        </select>
+        <!-- Carbohidratos -->
+        <select class="border p-2 w-full rounded bg-gray-700 text-white">
+          <option value="">Seleccione carbohidrato</option>
+          <!-- Repetir todas las opciones de carbohidrato -->
+        </select>
+        <!-- Grasas -->
+        <select class="border p-2 w-full rounded bg-gray-700 text-white">
+          <option value="">Seleccione grasa</option>
+          <!-- Repetir todas las opciones de grasa -->
+        </select>
+      </div>
+    </div>
+
+    <!-- CENA -->
+    <div class="bg-gray-800 border rounded p-4 shadow">
+      <h2 class="text-xl font-bold mb-4 text-shadow">Cena</h2>
+      <div class="grid grid-cols-3 gap-4">
+        <!-- Proteínas -->
+        <select class="border p-2 w-full rounded bg-gray-700 text-white">
+          <option value="">Seleccione proteína</option>
+          <!-- Repetir todas las opciones de proteína -->
+        </select>
+        <!-- Carbohidratos -->
+        <select class="border p-2 w-full rounded bg-gray-700 text-white">
+          <option value="">Seleccione carbohidrato</option>
+          <!-- Repetir todas las opciones de carbohidrato -->
+        </select>
+        <!-- Grasas -->
+        <select class="border p-2 w-full rounded bg-gray-700 text-white">
+          <option value="">Seleccione grasa</option>
+          <!-- Repetir todas las opciones de grasa -->
+        </select>
+      </div>
+    </div>
+
+  </div> <!-- FIN BLOQUES DE COMIDAS -->
+
+  <!-- BOTONES AL FINAL -->
+  <div class="mt-8 flex space-x-4">
+    <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      Guardar PDF
+    </button>
+    <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+      Enviar a WhatsApp
+    </button>
+    <button class="bg-gray-600 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded">
+      Reiniciar
+    </button>
+  </div>
+
+</body>
+</html>
